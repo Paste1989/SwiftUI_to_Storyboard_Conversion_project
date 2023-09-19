@@ -14,6 +14,10 @@
 		B7D85BDF2AB9C7EB00EEC3DF /* SwiftUI_to_Storyboard_Conversion_projectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D85BDE2AB9C7EB00EEC3DF /* SwiftUI_to_Storyboard_Conversion_projectTests.swift */; };
 		B7D85BE92AB9C7EB00EEC3DF /* SwiftUI_to_Storyboard_Conversion_projectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D85BE82AB9C7EB00EEC3DF /* SwiftUI_to_Storyboard_Conversion_projectUITests.swift */; };
 		B7D85BEB2AB9C7EB00EEC3DF /* SwiftUI_to_Storyboard_Conversion_projectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D85BEA2AB9C7EB00EEC3DF /* SwiftUI_to_Storyboard_Conversion_projectUITestsLaunchTests.swift */; };
+		B7D85BF82AB9C86D00EEC3DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D85BF72AB9C86D00EEC3DF /* AppDelegate.swift */; };
+		B7D85BFA2AB9C92100EEC3DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D85BF92AB9C92100EEC3DF /* SceneDelegate.swift */; };
+		B7D85BFF2AB9C9FF00EEC3DF /* RootCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D85BFE2AB9C9FF00EEC3DF /* RootCoordinator.swift */; };
+		B7D85C012AB9CA0900EEC3DF /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D85C002AB9CA0900EEC3DF /* Coordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		B7D85BE42AB9C7EB00EEC3DF /* SwiftUI_to_Storyboard_Conversion_projectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUI_to_Storyboard_Conversion_projectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7D85BE82AB9C7EB00EEC3DF /* SwiftUI_to_Storyboard_Conversion_projectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_to_Storyboard_Conversion_projectUITests.swift; sourceTree = "<group>"; };
 		B7D85BEA2AB9C7EB00EEC3DF /* SwiftUI_to_Storyboard_Conversion_projectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_to_Storyboard_Conversion_projectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B7D85BF72AB9C86D00EEC3DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B7D85BF92AB9C92100EEC3DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B7D85BFE2AB9C9FF00EEC3DF /* RootCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootCoordinator.swift; sourceTree = "<group>"; };
+		B7D85C002AB9CA0900EEC3DF /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +104,8 @@
 			children = (
 				B7D85BCD2AB9C7E900EEC3DF /* SwiftUI_to_Storyboard_Conversion_projectApp.swift */,
 				B7D85BCF2AB9C7E900EEC3DF /* ContentView.swift */,
+				B7D85BFB2AB9C9AA00EEC3DF /* AppLifecycle */,
+				B7D85BFD2AB9C9E000EEC3DF /* UI */,
 				B7D85BD12AB9C7EB00EEC3DF /* Assets.xcassets */,
 				B7D85BD32AB9C7EB00EEC3DF /* Preview Content */,
 			);
@@ -125,6 +135,32 @@
 				B7D85BEA2AB9C7EB00EEC3DF /* SwiftUI_to_Storyboard_Conversion_projectUITestsLaunchTests.swift */,
 			);
 			path = SwiftUI_to_Storyboard_Conversion_projectUITests;
+			sourceTree = "<group>";
+		};
+		B7D85BFB2AB9C9AA00EEC3DF /* AppLifecycle */ = {
+			isa = PBXGroup;
+			children = (
+				B7D85BF72AB9C86D00EEC3DF /* AppDelegate.swift */,
+				B7D85BF92AB9C92100EEC3DF /* SceneDelegate.swift */,
+			);
+			path = AppLifecycle;
+			sourceTree = "<group>";
+		};
+		B7D85BFC2AB9C9D600EEC3DF /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				B7D85C002AB9CA0900EEC3DF /* Coordinator.swift */,
+				B7D85BFE2AB9C9FF00EEC3DF /* RootCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		B7D85BFD2AB9C9E000EEC3DF /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B7D85BFC2AB9C9D600EEC3DF /* Coordinator */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +293,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7D85BF82AB9C86D00EEC3DF /* AppDelegate.swift in Sources */,
 				B7D85BD02AB9C7E900EEC3DF /* ContentView.swift in Sources */,
+				B7D85C012AB9CA0900EEC3DF /* Coordinator.swift in Sources */,
+				B7D85BFF2AB9C9FF00EEC3DF /* RootCoordinator.swift in Sources */,
 				B7D85BCE2AB9C7E900EEC3DF /* SwiftUI_to_Storyboard_Conversion_projectApp.swift in Sources */,
+				B7D85BFA2AB9C92100EEC3DF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
