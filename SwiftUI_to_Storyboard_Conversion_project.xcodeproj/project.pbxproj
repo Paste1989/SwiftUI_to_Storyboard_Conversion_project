@@ -18,6 +18,12 @@
 		B7D85BFA2AB9C92100EEC3DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D85BF92AB9C92100EEC3DF /* SceneDelegate.swift */; };
 		B7D85BFF2AB9C9FF00EEC3DF /* RootCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D85BFE2AB9C9FF00EEC3DF /* RootCoordinator.swift */; };
 		B7D85C012AB9CA0900EEC3DF /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D85C002AB9CA0900EEC3DF /* Coordinator.swift */; };
+		B7D85C032ABB15B400EEC3DF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D85C022ABB15B400EEC3DF /* HomeView.swift */; };
+		B7D85C062ABB17E900EEC3DF /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D85C052ABB17E900EEC3DF /* HomeCoordinator.swift */; };
+		B7D85C082ABB1C1200EEC3DF /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D85C072ABB1C1100EEC3DF /* HomeViewModel.swift */; };
+		B7D85C0C2ABB1CE300EEC3DF /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D85C0B2ABB1CE300EEC3DF /* SettingsView.swift */; };
+		B7D85C0E2ABB1D1600EEC3DF /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D85C0D2ABB1D1600EEC3DF /* SettingsViewModel.swift */; };
+		B7D85C102ABB1D6900EEC3DF /* SettingsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D85C0F2ABB1D6900EEC3DF /* SettingsCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +58,12 @@
 		B7D85BF92AB9C92100EEC3DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B7D85BFE2AB9C9FF00EEC3DF /* RootCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootCoordinator.swift; sourceTree = "<group>"; };
 		B7D85C002AB9CA0900EEC3DF /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		B7D85C022ABB15B400EEC3DF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		B7D85C052ABB17E900EEC3DF /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		B7D85C072ABB1C1100EEC3DF /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		B7D85C0B2ABB1CE300EEC3DF /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		B7D85C0D2ABB1D1600EEC3DF /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		B7D85C0F2ABB1D6900EEC3DF /* SettingsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,8 +171,30 @@
 			isa = PBXGroup;
 			children = (
 				B7D85BFC2AB9C9D600EEC3DF /* Coordinator */,
+				B7D85C042ABB17D300EEC3DF /* HomeView */,
+				B7D85C092ABB1CBE00EEC3DF /* SettingsView */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		B7D85C042ABB17D300EEC3DF /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				B7D85C052ABB17E900EEC3DF /* HomeCoordinator.swift */,
+				B7D85C022ABB15B400EEC3DF /* HomeView.swift */,
+				B7D85C072ABB1C1100EEC3DF /* HomeViewModel.swift */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		B7D85C092ABB1CBE00EEC3DF /* SettingsView */ = {
+			isa = PBXGroup;
+			children = (
+				B7D85C0F2ABB1D6900EEC3DF /* SettingsCoordinator.swift */,
+				B7D85C0B2ABB1CE300EEC3DF /* SettingsView.swift */,
+				B7D85C0D2ABB1D1600EEC3DF /* SettingsViewModel.swift */,
+			);
+			path = SettingsView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,9 +328,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7D85BF82AB9C86D00EEC3DF /* AppDelegate.swift in Sources */,
+				B7D85C102ABB1D6900EEC3DF /* SettingsCoordinator.swift in Sources */,
+				B7D85C082ABB1C1200EEC3DF /* HomeViewModel.swift in Sources */,
+				B7D85C032ABB15B400EEC3DF /* HomeView.swift in Sources */,
 				B7D85BD02AB9C7E900EEC3DF /* ContentView.swift in Sources */,
 				B7D85C012AB9CA0900EEC3DF /* Coordinator.swift in Sources */,
+				B7D85C0C2ABB1CE300EEC3DF /* SettingsView.swift in Sources */,
 				B7D85BFF2AB9C9FF00EEC3DF /* RootCoordinator.swift in Sources */,
+				B7D85C062ABB17E900EEC3DF /* HomeCoordinator.swift in Sources */,
+				B7D85C0E2ABB1D1600EEC3DF /* SettingsViewModel.swift in Sources */,
 				B7D85BCE2AB9C7E900EEC3DF /* SwiftUI_to_Storyboard_Conversion_projectApp.swift in Sources */,
 				B7D85BFA2AB9C92100EEC3DF /* SceneDelegate.swift in Sources */,
 			);

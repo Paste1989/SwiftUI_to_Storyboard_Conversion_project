@@ -7,16 +7,20 @@
 
 import Foundation
 import UIKit
+import SwiftUI
+
+final class BaseNavigationController: UINavigationController {}
 
 final class RootCoordinator: Coordinator {
-    let navigationController = UINavigationController()
+    var childCoordinator: Coordinator?
     
     func start() -> UIViewController {
-        let vc = UIViewController()
-        vc.view.backgroundColor = .red
-        navigationController.pushViewController(vc, animated: true)
-        return vc
+        return showHomeScreen()
     }
     
-    
+    func showHomeScreen() -> UIViewController {
+        let homeCoordinator = HomeCoordinator()
+        childCoordinator = homeCoordinator
+        return homeCoordinator.start()
+    }
 }
