@@ -10,7 +10,17 @@ import SwiftUI
 struct SettingsView: View {
     @ObservedObject var viewModel: SettingsViewModel
     var body: some View {
-        Text("Settings View")
+        
+        VStack {
+            Text("Settings View")
+                .padding()
+            
+            Button {
+                viewModel.onGoNext?()
+            } label: {
+                Text("Go Next")
+            }
+        }
     }
 }
 

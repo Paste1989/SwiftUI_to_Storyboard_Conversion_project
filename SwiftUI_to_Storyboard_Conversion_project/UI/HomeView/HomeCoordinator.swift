@@ -29,14 +29,14 @@ final class HomeCoordinator: Coordinator {
     
     private func createSetttingsView() -> UIViewController {
 ///1. with using new Coordinator
-//        let settingsCoordinator = SettingsCoordinator(navigationController: navigationController)
-//        return settingsCoordinator.start()
+        let settingsCoordinator = SettingsCoordinator(navigationController: navigationController)
+        return settingsCoordinator.start()
         
 ///2. without using new Coordinator
-        let vm = SettingsViewModel()
-        let settingsView = SettingsView(viewModel: vm)
-        let vc = UIHostingController(rootView: settingsView)
-        navigationController.pushViewController(vc, animated: true)
-        return navigationController
+//        let vm = SettingsViewModel()
+//        let settingsView = SettingsView(viewModel: vm)
+//        let vc = UIHostingController(rootView: settingsView)
+//        navigationController.pushViewController(vc, animated: true)
+//        return navigationController
     }
 }

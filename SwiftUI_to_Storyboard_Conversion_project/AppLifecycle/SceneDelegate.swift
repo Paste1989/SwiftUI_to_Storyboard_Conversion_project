@@ -12,13 +12,12 @@ class SceneDelegate: NSObject, UIWindowSceneDelegate {
     var window: UIWindow?
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        guard let _ = (scene as? UIWindowScene) else { return }
+        guard let windowScene = scene as? UIWindowScene else { return }
         print("SceneDelegate is connected successfully!")
         
         ///coordinator
         let rootCoordinator = RootCoordinator()
-        guard let winScene = (scene as? UIWindowScene) else { return }
-        window = UIWindow(windowScene: winScene)
+        window = UIWindow(windowScene: windowScene)
         window?.rootViewController = rootCoordinator.start()
         window?.makeKeyAndVisible()
     }

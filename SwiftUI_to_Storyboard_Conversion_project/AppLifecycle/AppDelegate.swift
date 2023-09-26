@@ -13,7 +13,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         print("App Launched successfully!")
         return true
     }
-    
+
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
         let sceneConfiguration: UISceneConfiguration = UISceneConfiguration(name: nil, sessionRole: connectingSceneSession.role)
         sceneConfiguration.delegateClass = SceneDelegate.self

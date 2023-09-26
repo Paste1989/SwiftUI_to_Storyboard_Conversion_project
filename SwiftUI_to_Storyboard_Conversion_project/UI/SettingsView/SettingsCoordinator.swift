@@ -24,6 +24,17 @@ final class SettingsCoordinator: Coordinator {
         let settingsView = SettingsView(viewModel: vm)
         let vc = UIHostingController(rootView: settingsView)
         navigationController.pushViewController(vc, animated: true)
+        vm.onGoNext = {
+            _ = self.showHomeVC()
+        }
+        return vc
+    }
+    
+    private func showHomeVC() -> UIViewController {
+        let vm = HomeViewModel()
+        let homeView = HomeView(viewModel: vm)
+        let vc = UIHostingController(rootView: homeView)
+        navigationController.pushViewController(vc, animated: true)
         return vc
     }
 }

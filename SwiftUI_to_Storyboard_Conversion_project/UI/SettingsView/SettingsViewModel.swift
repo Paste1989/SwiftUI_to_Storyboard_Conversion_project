@@ -9,5 +9,5 @@ import Foundation
 import SwiftUI
 
 final class SettingsViewModel: ObservableObject {
-    
+    var onGoNext: (() -> Void)?
 }

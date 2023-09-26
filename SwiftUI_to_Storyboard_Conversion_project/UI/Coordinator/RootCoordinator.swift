@@ -18,7 +18,7 @@ final class RootCoordinator: Coordinator {
         return showHomeScreen()
     }
     
-    func showHomeScreen() -> UIViewController {
+    private func showHomeScreen() -> UIViewController {
         let homeCoordinator = HomeCoordinator()
         childCoordinator = homeCoordinator
         return homeCoordinator.start()
